@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Transaction Monitoring</title>
+<link rel="stylesheet" href="css/verification.css">
+</head>
+
+<body>
+ <div class="flex-container1">
+  <div>
+<button onclick="document.getElementById('box').innerHTML=''">Clear</button> </div>
+<div>
+ <button onclick="document.getElementById('box').innerHTML=datafetch('apis/txngateway1.php','box')">Transaction 1st Gateway</button>
+ </div>
+ <div>
+ <button onclick="document.getElementById('box').innerHTML=datafetch('apis/txngateway2.php','box')">Transaction 2nd Gateway</button>
+ 
+ </div>
+ <div> <button onclick="window.location = 'home.html'">Home</button> </div>
+</div>
+ <div class="flex-container">
+  <div>
+ <p id="box"></p>
+ </div>
+ </div>
+
+<script src="js/verification.js"></script>
+
+</body>
+</html>
